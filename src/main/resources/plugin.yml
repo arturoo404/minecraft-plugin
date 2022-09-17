@@ -1,0 +1,13 @@
+name: MinecraftPlug
+version: '${project.version}'
+main: com.arturoo404.minecraftplug.MinecraftPlug
+api-version: 1.16
+authors: [ arturoo404 ]
+description: Minecraft Plug
+
+commands:
+  hpbar-status:
+    description: "Change hp bar status"
+
+hp-bar:
+  status: false
