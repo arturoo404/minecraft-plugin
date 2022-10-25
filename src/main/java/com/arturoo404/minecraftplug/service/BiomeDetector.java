@@ -1,10 +1,8 @@
 package com.arturoo404.minecraftplug.service;
 
 import com.arturoo404.minecraftplug.MinecraftPlug;
-import org.bukkit.Location;
 import org.bukkit.block.Biome;
 import org.bukkit.entity.Player;
-import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;

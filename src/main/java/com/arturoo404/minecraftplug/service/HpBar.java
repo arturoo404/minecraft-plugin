@@ -3,8 +3,6 @@ package com.arturoo404.minecraftplug.service;
 import com.arturoo404.minecraftplug.MinecraftPlug;
 import org.bukkit.ChatColor;
 import org.bukkit.attribute.Attribute;
-import org.bukkit.attribute.AttributeInstance;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -49,15 +47,15 @@ public class HpBar {
                         double v = entHp / baseValue * 100;
 
                         if (v >= 50) {
-                            living.setCustomName(ChatColor.WHITE + mobName + ": " + ChatColor.GREEN + hpStr);
+                            living.setCustomName(ChatColor.WHITE + mobName + ": " + ChatColor.GREEN + hpStr + ChatColor.RED + " ❤");
                             living.setCustomNameVisible(true);
                         }
                         if (v < 50 && v > 20) {
-                            living.setCustomName(ChatColor.WHITE + mobName + ": " + ChatColor.YELLOW + hpStr);
+                            living.setCustomName(ChatColor.WHITE + mobName + ": " + ChatColor.YELLOW + hpStr + ChatColor.RED + " ❤");
                             living.setCustomNameVisible(true);
                         }
                         if (v <= 20) {
-                            living.setCustomName(ChatColor.WHITE + mobName + ": " + ChatColor.RED + hpStr);
+                            living.setCustomName(ChatColor.WHITE + mobName + ": " + ChatColor.RED + hpStr + ChatColor.RED + " ❤");
                             living.setCustomNameVisible(true);
                         }
 
@@ -74,6 +72,6 @@ public class HpBar {
                     }
                 }
             }
-        }.runTaskTimer(plugin, 0, 10);
+        }.runTaskTimer(plugin, 0, 15);
     }
 }

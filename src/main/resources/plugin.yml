@@ -10,4 +10,4 @@ commands:
     description: "Change hp bar status"
 
 hp-bar:
-  status: false
+  status: true
